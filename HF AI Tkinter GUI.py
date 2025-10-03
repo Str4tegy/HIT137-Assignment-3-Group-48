@@ -125,8 +125,6 @@ class AIIntegratorWindow(BaseWindow):
                 if self.input_type_var.get() == 'texttoimg':
                     textprompt = self.text_entry.get('1.0', tk.END)
                     text_to_image(textprompt)
-                # elif self.input_type_var.get() == 'imgtotext' and file_path != "":
-                #     image_to_text(file_path)
                 elif self.input_type_var.get() == 'imgtotext' and file_path != "":
                     image_to_text(file_path)
 
